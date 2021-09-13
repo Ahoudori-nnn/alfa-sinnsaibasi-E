@@ -20,7 +20,7 @@ function Resize(alpha){
 function UpdateTime(){
     const min = Math.floor((LeftTime/60)).toString();
     const sec = Math.floor((LeftTime%60)).toString();
-    progress.innerText  = min + ":" + sec;
+    progress.innerText  = "残り時間" + min + ":" + sec;
 }
 
 
