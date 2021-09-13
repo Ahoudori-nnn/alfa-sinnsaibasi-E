@@ -18,15 +18,15 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: 'F',
         },
         stage2: {
-          q1: 'いいい',
+          q1: '81',
           // q2: 'えええ',
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: '9',
           // q2: 'かかか',
           // q3: 'ききき',
         }
@@ -79,7 +79,7 @@ const app = Vue.createApp({
       this.clear[stage] = result;
       /* 最終ステージの入力を判定します。 */
       if ( this.clear[stage] === true && final === 'final' ) {
-        window.location.href = 'final.html';
+        window.location.href = 'GoodEnd.html';
       }
     },
     /* クリア画面「次のステージへ」ボタンをクリックした時の動作を設定します
@@ -126,5 +126,26 @@ app.component('answer-input', {
     },
   }
 })
+
+
+app.component('Activate', {
+  data: function () {
+    return {
+      message:"foo?"
+    }
+  },
+
+  
+  template: `
+  <button id = "Activate"  v-on:click="gotomain()">
+    <p>起動させる</p>
+  </button>`,
+  methods: {
+    gotomain(oof){
+      location.href = "main.html";
+    }
+  }
+});
+
 
 app.mount('#stage')

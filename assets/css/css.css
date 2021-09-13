@@ -1,0 +1,26 @@
+#progressbar {
+    height: 40px;
+    width: 40%;
+    background: rgb(244,244,244);
+    border: 2px solid white;
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#progress {
+    background-color : rgb(124,255,119);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+   // height:100%;
+}
+
+#Activate {
+    background-color : rgb(255,51,51);
+}
